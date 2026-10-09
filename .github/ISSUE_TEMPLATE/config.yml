@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentação dos plugins / Plugin documentation
+    url: https://eduplay-moodle-suite.github.io/
+    about: Instalação, configuração e uso de cada plugin. / Installation, configuration and usage of each plugin.

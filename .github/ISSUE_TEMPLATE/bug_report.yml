@@ -1,0 +1,62 @@
+name: Relatar um problema / Bug report
+description: Algo não funciona como esperado / Something does not work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de abrir, procure uma issue igual. **Vulnerabilidades**: não use issue pública, siga o `SECURITY.md` do repositório.
+        Before opening, search for a duplicate. **Vulnerabilities**: do not use a public issue, follow the repository's `SECURITY.md`.
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin e versão / Plugin and version
+      description: "Ex.: local_eduplay 0.4.0"
+    validations:
+      required: true
+  - type: input
+    id: moodle
+    attributes:
+      label: Versão do Moodle / Moodle version
+      description: "Ex.: 5.3 ou 4.5.15"
+    validations:
+      required: true
+  - type: input
+    id: php-db
+    attributes:
+      label: PHP e banco de dados / PHP and database
+      description: "Ex.: PHP 8.3, PostgreSQL 17"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Navegador / Browser
+      description: "Ex.: Firefox 140, Safari iOS 18 (se o problema for na interface)"
+  - type: input
+    id: thirdparty
+    attributes:
+      label: Plugins de terceiros envolvidos / Third-party plugins involved
+      description: "Ex.: mod_interactivevideo 2.2"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir / Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado / Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado obtido / Actual result
+      description: Inclua mensagens de erro e, se possível, capturas de tela. Não inclua senhas nem dados pessoais. / Include error messages and, if possible, screenshots. Do not include passwords or personal data.
+    validations:
+      required: true

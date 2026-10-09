@@ -1,0 +1,34 @@
+name: Sugerir uma melhoria / Feature request
+description: Ideia ou necessidade nova / A new idea or need
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou necessidade / Problem or need
+      description: O que você não consegue fazer hoje? / What can't you do today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta / Proposal
+      description: Como imagina que funcionaria? / How do you imagine it working?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas / Alternatives considered
+  - type: dropdown
+    id: api
+    attributes:
+      label: Depende de API do EduPlay? / Does it depend on an EduPlay API?
+      description: Autenticação, conteúdo privado, upload e publicação dependem de API oficial e autorização da RNP. / Authentication, private content, upload and publishing depend on an official API and RNP authorization.
+      options:
+        - Não / No
+        - Sim, pública (já usada pelo projeto) / Yes, public (already used by the project)
+        - Sim, exige autenticação ou autorização / Yes, needs authentication or authorization
+        - Não sei / Don't know
+    validations:
+      required: true
